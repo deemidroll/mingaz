@@ -7,8 +7,13 @@
         <title>Gulp Playground</title>
         <link rel="stylesheet" href="./css/app.css" />
     </head>
-
     <body>
+        <div class="left-text">
+            <span class="text nav-main">Главная</span><br>
+            <span class="text nav-our">Наша газировка</span><br>
+            <span class="text nav-game">Игра</span>
+        </div>
+        <div id="wrapper">
         <div class="page page-relative">
             <div class="radio container">
                 <div class="col-xs-12 radio-top">
@@ -22,8 +27,9 @@
                     </div>
                     <div class="radio-music">
                         <div class="radio-music-btn radio-music-btn-pause"></div>
-                        <div class="radio-music-btn radio-music-btn-play"></div>
-                        <div class="radio-music-song">Lapalux - M.M.L.M</div>
+                        <div class="radio-music-btn radio-music-btn-next"></div>
+                        <div class="radio-music-song"></div>
+                        <audio src="./music/Becouse I Want You.mp3" preload="auto" />
                     </div>
                 </div>
                 <div class="col-xs-12 radio-board">
@@ -31,11 +37,6 @@
                 </div>
             </div>
             <div class="fridge container">
-                <div class="left-text">
-                    <span class="text nav-main">Главная</span><br>
-                    <span class="text nav-our">Наша газировка</span><br>
-                    <span class="text nav-game">Игра</span>
-                </div>
                 <div class="col-xs-12 fridge-top">
                     <img src="./img/fridge-inner.png" height="1370" width="1853" alt="" class="fridge-inner">
                     <img class="fridge-top-img open-0" src="./img/fridge-top.png" height="585" width="814" alt="">
@@ -61,7 +62,7 @@
                 </div>
                 <div class="col-xs-12 fridge-bottom">
                     <!-- <div class="fridge-bottom-bg"></div> -->
-                    <img src="./img/fridge-bottom-grip.jpg" height="186" width="805" alt="">
+                    <img class="fridge-bottom-grip" src="./img/fridge-bottom-grip.jpg" height="186" width="805" alt="">
                     <img src="./img/fridge-bottom-pattern.jpg" height="208" width="805" alt="">
                     <img src="./img/fridge-bottom-pattern.jpg" height="208" width="805" alt="">
                     <img src="./img/fridge-bottom-pattern.jpg" height="208" width="805" alt="">
@@ -69,9 +70,10 @@
                     <img src="./img/fridge-bottom-pattern.jpg" height="208" width="805" alt="">
                     <img src="./img/fridge-bottom-pattern.jpg" height="208" width="805" alt="">
                     <img src="./img/fridge-bottom-pattern.jpg" height="208" width="805" alt="">
-                    <img src="./img/fridge-bottom-pattern.jpg" height="208" width="805" alt="">
+                    <!-- <img src="./img/fridge-bottom-pattern.jpg" height="208" width="805" alt=""> -->
                 </div>
             </div>
+        </div>
         </div>
         <footer class="footer footer-hide">
             <div class="container">
@@ -137,7 +139,10 @@
                 </div>
             </div>
         </footer>
+        
         <script src="./js/jquery-1.11.1.min.js"></script>
+        <script src="./js/iscroll-probe.js"></script>
+        <script src="./js/audio.min.js"></script>
         <script src="./js/app.js"></script>
     </body>
 </html>
