@@ -4,10 +4,17 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>Gulp Playground</title>
+        <title>Министерство газировки</title>
         <link rel="stylesheet" href="./css/app.css" />
     </head>
-    <body onload="loaded();">
+    <!-- <body onload="loaded();"> -->
+    <body>
+        <div class="preloader preload-top"></div>
+        <div class="preloader preload-bottom">
+            <div class="preloader-progress"></div>
+            <img class="preload-img" src="./img/pinguin.gif" alt="">
+        </div>
+        
         <div class="left-text left-text-1">
             <span class="text nav-main">Главная</span>
         </div>
@@ -19,27 +26,26 @@
         </div>
         <div id="wrapper">
             <div class="page page-relative">
-                <div class="radio container-fluid">
+                <div class="radio-cont container-fluid">
                     <img src="./img/fridge_with_radio.png" height="3048" width="2001" alt="" class="fridge-inner">
-                    <img class="Dver_1" src="./img/Dver_1.png" alt="">
                     <div class="col-xs-12 radio-top">
-                        <!-- <img src="./img/radio.png" height="316" width="1116" alt=""> -->
                         <div class="radio-layer">
                             <div class="radio-menu">
                                 <span class="menu-text nav-main">Главная</span>
                                 <span class="menu-text nav-our">Наша газировка</span>
                                 <span class="menu-text nav-game">Игра</span>
                                 <span class="v-aligner"></span>
-                                <div class="nav-main nav-main-hover"></div>
-                                <div class="nav-our nav-our-hover"></div>
-                                <div class="nav-game nav-game-hover"></div>
+                            </div>
+                            <div class="radio-menu-hover">
+                                <span class="menu-text nav-main">Главная</span>
+                                <span class="menu-text nav-our">Наша газировка</span>
+                                <span class="menu-text nav-game">Игра</span>
+                                <span class="v-aligner"></span>
                             </div>
                             <div class="radio-music">
                                 <div class="radio-music-btn radio-music-btn-pause">
-                                    <!-- <img src="./img/play.png" height="69" width="123" alt=""> -->
                                 </div>
                                 <div class="radio-music-btn radio-music-btn-next">
-                                    <!-- <img src="./img/next.png" alt=""> -->
                                 </div>
                                 <div class="radio-music-song">
                                     <span class="radio-music-song-text"></span>
@@ -56,34 +62,10 @@
                     </div>
                 </div>
                 <div class="fridge container-fluid">
+                    <div class="fridge-door open-0">
+                        <div class="door-opener nav-our"></div>
+                    </div>
                     <div class="col-xs-12 fridge-top">
-                        <div class="fridge-door open-0">
-                            
-                        </div>
-                        <!-- <div class="container fringe-inner-cont"> -->
-                            <!-- <div class="col-xs-1"></div> -->
-                            <!-- <div class="col-xs-2"> -->
-                                <!-- <img src="./img/dushes.png" height="487" width="132" alt="" class="limonad"> -->
-                                <!-- <img src="./img/limonad.png" height="614" width="198" alt="" class="limonad"> -->
-                            <!-- </div> -->
-                            <!-- <div class="col-xs-2"> -->
-                                <!-- <img src="./img/tarhun.png" height="486" width="131" alt="" class="limonad"> -->
-                                <!-- <img src="./img/limonad.png" height="614" width="198" alt="" class="limonad"> -->
-                            <!-- </div> -->
-                            <!-- <div class="col-xs-2"> -->
-                                <!-- <img src="./img/sitro.png" height="487" width="131" alt="" class="limonad"> -->
-                                <!-- <img src="./img/limonad.png" height="614" width="198" alt="" class="limonad"> -->
-                            <!-- </div> -->
-                            <!-- <div class="col-xs-2"> -->
-                                <!-- <img src="./img/soda.png" height="486" width="131" alt="" class="limonad"> -->
-                                <!-- <img src="./img/limonad.png" height="614" width="198" alt="" class="limonad"> -->
-                            <!-- </div> -->
-                            <!-- <div class="col-xs-2"> -->
-                                <!-- <img src="./img/lomo.png" height="487" width="132" alt="" class="limonad"> -->
-                                <!-- <img src="./img/limonad.png" height="614" width="198" alt="" class="limonad"> -->
-                            <!-- </div> -->
-                            <!-- <div class="col-xs-1"></div> -->
-                        <!-- </div> -->
                         <div class="container fringe-inner-hover-cont">
                             <div class="col-xs-1"></div>
                             <div class="col-xs-2 with-desc"></div>
@@ -93,31 +75,211 @@
                             <div class="col-xs-2 with-desc"></div>
                             <div class="col-xs-1"></div>
                         </div>
-                        <div class="game">
-                            <div class="game-field container">
-                                <div class="col-xs-2 col-xs-offset-1 game-field-cell"><div class="game-tile game-tile-0"></div><div class="game-question game-question-0"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-0"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-1"></div><div class="game-question game-question-1"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-1"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-2"></div><div class="game-question game-question-2"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-2"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-3"></div><div class="game-question game-question-3"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-3"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-4"></div><div class="game-question game-question-4"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-4"><img src="./img/blank.png" alt=""></div></div>
+                    </div>
+                    <div class="game">
+                        <div class="game-field container">
+                            <div class="col-xs-2 col-xs-offset-1 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-0"></div>
+                                <div class="game-question game-question-0">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-0">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-1"></div>
+                                <div class="game-question game-question-1">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-1">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-2"></div>
+                                <div class="game-question game-question-2">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-2">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-3"></div>
+                                <div class="game-question game-question-3">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-3">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-4"></div>
+                                <div class="game-question game-question-4">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-4">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
 
-                                <div class="col-xs-2 col-xs-offset-1 game-field-cell"><div class="game-tile game-tile-5"></div><div class="game-question game-question-5"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-5"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-6"></div><div class="game-question game-question-6"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-6"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-7"></div><div class="game-question game-question-7"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-7"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-8"></div><div class="game-question game-question-8"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-8"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-9"></div><div class="game-question game-question-9"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-9"><img src="./img/blank.png" alt=""></div></div>
+                            <div class="col-xs-2 col-xs-offset-1 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-5"></div>
+                                <div class="game-question game-question-5">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-5">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-6"></div>
+                                <div class="game-question game-question-6">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-6">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-7"></div>
+                                <div class="game-question game-question-7">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-7">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-8"></div>
+                                <div class="game-question game-question-8">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-8">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-9"></div>
+                                <div class="game-question game-question-9">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-9">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
 
-                                <div class="col-xs-2 col-xs-offset-1 game-field-cell"><div class="game-tile game-tile-10"></div><div class="game-question game-question-10"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-10"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-11"></div><div class="game-question game-question-11"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-11"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-12"></div><div class="game-question game-question-12"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-12"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-13"></div><div class="game-question game-question-13"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-13"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-14"></div><div class="game-question game-question-14"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-14"><img src="./img/blank.png" alt=""></div></div>
+                            <div class="col-xs-2 col-xs-offset-1 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-10"></div>
+                                <div class="game-question game-question-10">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-10">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-11"></div>
+                                <div class="game-question game-question-11">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-11">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-12"></div>
+                                <div class="game-question game-question-12">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-12">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-13"></div>
+                                <div class="game-question game-question-13">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-13">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-14"></div>
+                                <div class="game-question game-question-14">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-14">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
 
-                                <div class="col-xs-2 col-xs-offset-1 game-field-cell"><div class="game-tile game-tile-15"></div><div class="game-question game-question-15"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-15"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-16"></div><div class="game-question game-question-16"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-16"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-17"></div><div class="game-question game-question-17"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-17"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-18"></div><div class="game-question game-question-18"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-18"><img src="./img/blank.png" alt=""></div></div>
-                                <div class="col-xs-2 game-field-cell"><div class="game-tile game-tile-19"></div><div class="game-question game-question-19"><img src="./img/question.png" alt=""></div><div class="game-blank game-blank-19"><img src="./img/blank.png" alt=""></div></div>
+                            <div class="col-xs-2 col-xs-offset-1 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-15"></div>
+                                <div class="game-question game-question-15">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-15">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-16"></div>
+                                <div class="game-question game-question-16">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-16">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-17"></div>
+                                <div class="game-question game-question-17">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-17">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-18"></div>
+                                <div class="game-question game-question-18">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-18">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 game-field-cell locked">
+                                <img class="field-shadow" src="./img/shadow.png" alt="" />
+                                <div class="game-tile game-tile-19"></div>
+                                <div class="game-question game-question-19">
+                                    <img src="./img/question.png" alt="">
+                                </div>
+                                <div class="game-blank game-blank-19">
+                                    <img src="./img/blank.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,70 +288,70 @@
         </div>
         <footer class="footer footer-hide">
             <div class="container-fluid">
-                <div class="col-xs-4 nodesc">
-                    <div class="footer-text-main">Министерство Газировки –<br>для тех, кто с чувством юмора!</div>
+                <div class="col-md-4 nodesc">
+                    <div class="footer-text-main">Министерство Газировки – для тех, кто с чувством юмора!</div>
                 </div>
-                <div class="col-xs-4 desc desc-1">
+                <div class="col-md-4 desc desc-1">
                     <div class="footer-text-main-2">Дюшес</div>
                 </div>
-                <div class="col-xs-4 desc desc-2">
+                <div class="col-md-4 desc desc-2">
                     <div class="footer-text-main-2">Ситро</div>
                 </div>
-                <div class="col-xs-4 desc desc-3">
+                <div class="col-md-4 desc desc-3">
                     <div class="footer-text-main-2">Лимонад</div>
                 </div>
-                <div class="col-xs-4 desc desc-4">
+                <div class="col-md-4 desc desc-4">
                     <div class="footer-text-main-2">Тархун</div>
                 </div>
-                <div class="col-xs-4 desc desc-5">
+                <div class="col-md-4 desc desc-5">
                     <div class="footer-text-main-2">Крем-сода</div>
                 </div>
-                <div class="col-xs-4 desc desc-game">
+                <div class="col-md-4 desc desc-game">
                     <div class="footer-text-main game-level">Игра</div>
                     <button class="btn btn-xs btn-primary start-game footer-text-main">Начать игру</button>
                 </div>
-                <div class="col-xs-4 footer-text-small nodesc">
+                <div class="col-md-4 footer-text-small nodesc">
                     «Министерство Газировки» - это эксперт в области газированных напитков – продукт, который выбирают люди жизнерадостные, с чувством юмора. «Министерство газировки» помогает потребителю радоваться жизни и улыбнуться даже в серьезной ситуации.
                 </div>
-                <div class="col-xs-4 footer-text-small nodesc">
+                <div class="col-md-4 footer-text-small nodesc">
                     Традиционные газированные напитки любят и взрослые, и дети. С ними любой день может стать солнечным и ярким, а у потребителя появится праздничное настроение.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-1">
+                <div class="col-md-4 footer-text-small desc desc-1">
                     Это сладкий напиток обладает богатым вкусом отборных свежих груш с тающей, сладкой мякотью и тонкой кожицей. «Дюшес» от «МинГаз» особенно подходит для поднятия настроения и дружных компаний.<br>&nbsp;
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-1">
+                <div class="col-md-4 footer-text-small desc desc-1">
                     Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-2">
+                <div class="col-md-4 footer-text-small desc desc-2">
                     Газированный напиток, представляющий из себя идеальную смесь лучших, отобранных вручную апельсинов, мандаринов и лимонов. «Ситро» - это мощный заряд, который на весь день повысит тонус организма и наполнит его жизненной силой.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-2">
+                <div class="col-md-4 footer-text-small desc desc-2">
                     Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-3">
+                <div class="col-md-4 footer-text-small desc desc-3">
                     Легендарный, первый в истории сладкий газированный напиток со вкусом лимона. Его название стало нарицательным для всех традиционных газированных напитков. «Лимонад» от «МинГаз» - это тот самый вкус, знакомый всем с детства.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-3">
+                <div class="col-md-4 footer-text-small desc desc-3">
                     Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-4">
+                <div class="col-md-4 footer-text-small desc desc-4">
                     Этот популярный освежающий напиток готовится на основе пряного эстрагона и как нельзя лучше подходит для летних вечерних прогулок. «Тархун» готовится по классической технологии, что позволяет ему служить важным источником полезных элементов.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-4">
+                <div class="col-md-4 footer-text-small desc desc-4">
                     Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-5">
+                <div class="col-md-4 footer-text-small desc desc-5">
                     Сладкий газированный напиток «Крем-сода» со вкусом популярного ванильного мороженного. Кстати, именно содержание свежей ванили придает напитку неповторимый светло-золотистого цвет и наделяет его нежным и мягким вкусом.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-5">
+                <div class="col-md-4 footer-text-small desc desc-5">
                     Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-game">
+                <div class="col-md-4 footer-text-small desc desc-game">
                     <div>Найди <span class="game-task"></span>соответствия</div>
                     <div class="footer-text-main">Осталось времени: <span class="game-timer">300</span></div>
                     <div class="footer-text-main">Кликов: <span class="game-clicks">0</span></div>
                 </div>
-                <div class="col-xs-4 footer-text-small desc desc-game">
+                <div class="col-md-4 footer-text-small desc desc-game">
                     Очки
                     <div class="footer-text-main">За прошлый уровень: <span class="game-score">0</span></div>
                     <div class="footer-text-main">Всего: <span class="game-score-total">0</span></div>
