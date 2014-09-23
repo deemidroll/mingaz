@@ -2,19 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <!-- <staticContent><mimeMap fileExtension=".svg" mimeType="image/svg+xml" /></staticContent> -->
         <title>Министерство газировки</title>
         <link rel="stylesheet" href="./css/app.css" />
+        <!-- OpenGraph Facebook Meta Tags -->
+        <meta id="fb-meta-url" property="og:url" content="http://samples.ogp.me/136756249803614" /> 
+        <meta id="fb-meta-title" property="og:title" content="Chocolate Pecan Pie" />
+        <meta id="fb-meta-desc" property="og:description" content="This pie is delicious!" /> 
+        <meta id="fb-meta-image" property="og:image" content="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-prn1/851565_496755187057665_544240989_n.jpg" /> 
     </head>
     <body>
+        <!-- preloader -->
         <div class="preloader preload-top"></div>
         <div class="preloader preload-bottom">
             <div class="preloader-progress"></div>
-            <img class="preload-img" src="./img/pinguin2.gif" alt="">
+            <img class="preload-img" src="./img/pinguin2.gif" alt=""/>
         </div>
-        
+        <!-- left menu -->
         <div class="left-text left-text-1">
             <img class="text nav-main" src="./img/main.svg" alt="" />
         </div>
@@ -24,10 +28,11 @@
         <div class="left-text left-text-3">
             <img class="text nav-game" src="./img/game.svg" alt="" />
         </div>
+        <!-- iscroll wrapper -->
         <div id="wrapper">
             <div class="page page-relative">
                 <div class="radio-cont container-fluid">
-                    <img src="" height="3048" width="2001" alt="" class="fridge-inner">
+                    <img src="" height="3048" width="2001" alt="" class="fridge-inner"/>
                     <div class="col-xs-12 radio-top">
                         <div class="radio-layer">
                             <div class="radio-menu">
@@ -43,16 +48,14 @@
                                 <span class="v-aligner"></span>
                             </div>
                             <div class="radio-music">
-                                <div class="radio-music-btn radio-music-btn-pause">
-                                </div>
-                                <div class="radio-music-btn radio-music-btn-next">
-                                </div>
+                                <div class="radio-music-btn radio-music-btn-pause"></div>
+                                <div class="radio-music-btn radio-music-btn-next"></div>
                                 <div class="radio-music-song">
                                     <span class="radio-music-song-text"></span>
                                     <span class="v-aligner"></span>
                                 </div>
-                                <audio id="music" />
-                                <audio id="sfx" />
+                                <audio id="music"/>
+                                <audio id="sfx"/>
                             </div>
                             <div class="radio-music-hover">
                                 <div class="radio-music-btn-pause radio-music-btn-pause-hover"></div>
@@ -65,7 +68,7 @@
                 <div class="fridge container-fluid">
                     <div class="fridge-door">
                         <div class="door-opener nav-our"></div>
-                        <div class="fridge-door-wrap open-0">
+                        <div class="fridge-door-wrap open-0"></div>
                     </div>
                     <div class="col-xs-12 fridge-top">
                         <div class="container fringe-inner-hover-cont">
@@ -79,7 +82,7 @@
                         </div>
                     </div>
                     <div class="game">
-                        <div class="game-field container">
+                        <div class="game-field container-fluid">
                             <div class="col-xs-2 game-field-cell locked">
                                 <div class="field-shadow">
                                     <img src="./img/shadow.png" alt="" />
@@ -94,24 +97,38 @@
                             </div>
                         </div>
                         <div class="game-popup game-popup-start">
-                            <div class="popup-text">В этой игре лишь одно простое<br>правило &mdash; найди совпадения</div>
-                            <button class="btn popup-btn start-game">Начать игру</button>
+                            <div class="popup-text">
+                                <p>В этой игре лишь одно простое</p>
+                                <p>правило &mdash; найди совпадения</p>
+                            </div>
+                            <div class="btn popup-btn start-game">Начать игру</div>
                         </div>
                         <div class="game-popup game-popup-restart">
-                            <div class="popup-text">Начать уровень<br>сначала</div>
-                            <button class="btn popup-btn restart-game">Играть</button>
+                            <div class="popup-text">
+                                <p>Начать уровень</p>
+                                <p>сначала</p>
+                            </div>
+                            <div class="btn popup-btn restart-game">Играть</div>
                         </div>
                         <div class="game-popup game-popup-resume">
-                            <div class="popup-text">Игра была<br>приостановлена</div>
-                            <button class="btn popup-btn resume-game">Продолжить</button>
+                            <div class="popup-text">
+                                <p>Игра была</p>
+                                <p>приостановлена</p>
+                            </div>
+                            <div class="btn popup-btn resume-game">Продолжить</div>
                         </div>
                         <div class="game-popup game-popup-next">
-                            <div class="popup-text">Поздравляем!<br>Вы прошли уровень. Ваш результат:</div>
-                            <div class="game-score-field"><span class="game-score">199</span> <span class="game-score-text"></span></div>
+                            <div class="popup-text">
+                                <p>Поздравляем!</p>
+                                <p>Вы прошли уровень. Ваш результат:</p>
+                            </div>
+                            <div class="game-score-field">
+                                <span class="game-score">199</span>
+                                <span class="game-score-text"></span>
+                            </div>
                             <div class="game-social-share">
-                                <div class="social-vk">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         width="84px" height="16.001px" viewBox="0 0 84 16.001" enable-background="new 0 0 84 16.001" xml:space="preserve">
+                                <div class="social-vk social-vk-level-game">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="84px" height="16.001px" viewBox="0 0 84 16.001" enable-background="new 0 0 84 16.001" xml:space="preserve">
                                     <g>
                                         <g>
                                             <path fill-rule="evenodd" clip-rule="evenodd" fill="#e9e9e5" d="M39.944,6.615h-2.562V3.678h-2.477v8.481h2.477V8.526h2.562
@@ -164,9 +181,8 @@
                                     </g>
                                     </svg>
                                 </div>
-                                <div class="social-fb">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         width="63px" height="12.995px" viewBox="0 0 63 12.995" enable-background="new 0 0 63 12.995" xml:space="preserve">
+                                <div class="social-fb social-fb-win-game">
+                                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="63px" height="12.995px" viewBox="0 0 63 12.995" enable-background="new 0 0 63 12.995" xml:space="preserve">
                                     <path fill="#e9e9e5" d="M33.622,6.316c-0.539,0-0.928,0.178-1.322,0.358v4.1c0.378,0.037,0.594,0.037,0.952,0.037
                                         c1.295,0,1.473-0.596,1.473-1.428v-1.96C34.725,6.81,34.521,6.316,33.622,6.316 M25.026,6.092c-0.898,0-1.103,0.496-1.103,1.11
                                         v0.345h2.204V7.202C26.128,6.588,25.924,6.092,25.026,6.092 M8.374,10.36c0,0.486,0.228,0.738,0.731,0.738
@@ -190,18 +206,25 @@
                                     </svg>
                                 </div>
                             </div>
-                            <button class="btn popup-btn next-game">Продолжить игру</button>
+                            <div class="btn popup-btn next-game">Продолжить игру</div>
                         </div>
                         <div class="game-popup game-popup-win">
-                            <div class="popup-text">Поздравляем!<br>Вы прошли игру. Ваш результат:</div>
-                            <div class="game-score-field"><span class="game-score">199</span> <span class="game-score-text"></span></div>
+                            <div class="popup-text">
+                                <p>Поздравляем!</p>
+                                <p>Вы прошли игру. Ваш результат:</p>
+                            </div>
+                            <div class="game-score-field">
+                                <span class="game-score">199</span>
+                                <span class="game-score-text"></span>
+                            </div>
                             <div class="game-social-share">
-                                <div class="social-vk"></div>
-                                <div class="social-fb"></div>
+                                <div class="social-vk social-vk-win-game"></div>
+                                <div class="social-fb social-fb-win-game"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <canvas id="bg-canvas"></canvas>
             </div>
         </div>
         <footer class="footer footer-hide">
@@ -233,42 +256,18 @@
                 <div class="col-xs-4 desc desc-game desc-game-right">
                     <span class="footer-text-main game-footer-score">Очки: <span class="game-score-total">0</span></span>
                 </div>
-                <div class="col-md-4 footer-text-small nodesc">
-                    «Министерство Газировки» - это эксперт в области газированных напитков – продукт, который выбирают люди жизнерадостные, с чувством юмора. «Министерство газировки» помогает потребителю радоваться жизни и улыбнуться даже в серьезной ситуации.
-                </div>
-                <div class="col-md-4 footer-text-small nodesc">
-                    Традиционные газированные напитки любят и взрослые, и дети. С ними любой день может стать солнечным и ярким, а у потребителя появится праздничное настроение.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-1">
-                    Это сладкий напиток обладает богатым вкусом отборных свежих груш с тающей, сладкой мякотью и тонкой кожицей. «Дюшес» от «МинГаз» особенно подходит для поднятия настроения и дружных компаний.<br>&nbsp;
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-1">
-                    Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-2">
-                    Газированный напиток, представляющий из себя идеальную смесь лучших, отобранных вручную апельсинов, мандаринов и лимонов. «Ситро» - это мощный заряд, который на весь день повысит тонус организма и наполнит его жизненной силой.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-2">
-                    Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-3">
-                    Легендарный, первый в истории сладкий газированный напиток со вкусом лимона. Его название стало нарицательным для всех традиционных газированных напитков. «Лимонад» от «МинГаз» - это тот самый вкус, знакомый всем с детства.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-3">
-                    Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-4">
-                    Этот популярный освежающий напиток готовится на основе пряного эстрагона и как нельзя лучше подходит для летних вечерних прогулок. «Тархун» готовится по классической технологии, что позволяет ему служить важным источником полезных элементов.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-4">
-                    Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-5">
-                    Сладкий газированный напиток «Крем-сода» со вкусом популярного ванильного мороженного. Кстати, именно содержание свежей ванили придает напитку неповторимый светло-золотистого цвет и наделяет его нежным и мягким вкусом.
-                </div>
-                <div class="col-md-4 footer-text-small desc desc-5">
-                    Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.
-                </div>
+                <div class="col-md-4 footer-text-small nodesc">«Министерство Газировки» - это эксперт в области газированных напитков – продукт, который выбирают люди жизнерадостные, с чувством юмора. «Министерство газировки» помогает потребителю радоваться жизни и улыбнуться даже в серьезной ситуации.</div>
+                <div class="col-md-4 footer-text-small nodesc">Традиционные газированные напитки любят и взрослые, и дети. С ними любой день может стать солнечным и ярким, а у потребителя появится праздничное настроение.</div>
+                <div class="col-md-4 footer-text-small desc desc-1">Это сладкий напиток обладает богатым вкусом отборных свежих груш с тающей, сладкой мякотью и тонкой кожицей. «Дюшес» от «МинГаз» особенно подходит для поднятия настроения и дружных компаний.</div>
+                <div class="col-md-4 footer-text-small desc desc-1">Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.</div>
+                <div class="col-md-4 footer-text-small desc desc-2">Газированный напиток, представляющий из себя идеальную смесь лучших, отобранных вручную апельсинов, мандаринов и лимонов. «Ситро» - это мощный заряд, который на весь день повысит тонус организма и наполнит его жизненной силой.</div>
+                <div class="col-md-4 footer-text-small desc desc-2">Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.</div>
+                <div class="col-md-4 footer-text-small desc desc-3">Легендарный, первый в истории сладкий газированный напиток со вкусом лимона. Его название стало нарицательным для всех традиционных газированных напитков. «Лимонад» от «МинГаз» - это тот самый вкус, знакомый всем с детства.</div>
+                <div class="col-md-4 footer-text-small desc desc-3">Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.</div>
+                <div class="col-md-4 footer-text-small desc desc-4">Этот популярный освежающий напиток готовится на основе пряного эстрагона и как нельзя лучше подходит для летних вечерних прогулок. «Тархун» готовится по классической технологии, что позволяет ему служить важным источником полезных элементов.</div>
+                <div class="col-md-4 footer-text-small desc desc-4">Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.</div>
+                <div class="col-md-4 footer-text-small desc desc-5">Сладкий газированный напиток «Крем-сода» со вкусом популярного ванильного мороженного. Кстати, именно содержание свежей ванили придает напитку неповторимый светло-золотистого цвет и наделяет его нежным и мягким вкусом.</div>
+                <div class="col-md-4 footer-text-small desc desc-5">Предлагаем вам ознакомиться и с остальными напитками, каждый из которых обладает неповторимым вкусом и индивидуальностью.</div>
             </div>
         </footer>
         <script src="./js/jquery-1.11.1.min.js"></script>
