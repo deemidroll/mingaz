@@ -13,10 +13,10 @@
     </head>
     <body>
         <!-- preloader -->
-        <div class="preloader preload-top"></div>
-        <div class="preloader preload-bottom">
+        <div class="preloader preload-top">
             <div class="preloader-progress"></div>
             <img class="preload-img" src="./img/pinguin2.gif" alt=""/>
+            <canvas id="preloader-canvas"></canvas>
         </div>
         <!-- left menu -->
         <div class="left-text left-text-1">
@@ -32,7 +32,7 @@
         <div id="wrapper">
             <div class="page page-relative">
                 <div class="radio-cont container-fluid">
-                    <img src="" height="3048" width="2001" alt="" class="fridge-inner"/>
+                    <img src="" height="2919" width="1319" alt="" class="fridge-inner"/>
                     <div class="col-xs-12 radio-top">
                         <div class="radio-layer">
                             <div class="radio-menu">
@@ -48,12 +48,19 @@
                                 <span class="v-aligner"></span>
                             </div>
                             <div class="radio-music">
-                                <div class="radio-music-btn radio-music-btn-pause"></div>
-                                <div class="radio-music-btn radio-music-btn-next"></div>
-                                <div class="radio-music-song">
-                                    <span class="radio-music-song-text"></span>
-                                    <span class="v-aligner"></span>
+                                <div class="radio-music-btn radio-music-btn-pause">
+                                    <div class="radio-music-btn-text">PLAY</div>
                                 </div>
+                                <div class="radio-music-btn radio-music-btn-next">
+                                    <div class="radio-music-btn-text">NEXT</div>
+                                </div>
+                                <div class="radio-music-song">
+                                    <div class="radio-music-song-wrap">
+                                        <span class="radio-music-song-text"></span>
+                                        <span class="v-aligner"></span>
+                                    </div>
+                                </div>
+                                <div class="radio-music-speaker"></div>
                                 <audio id="music"/>
                                 <audio id="sfx"/>
                             </div>
@@ -123,8 +130,15 @@
                                 <p>Вы прошли уровень. Ваш результат:</p>
                             </div>
                             <div class="game-score-field">
-                                <span class="game-score">199</span>
-                                <span class="game-score-text"></span>
+                                <div class="game-score-rotary">
+                                    <!-- <ul class="rotary-digit rotary-digit-4"></ul> -->
+                                    <ul class="rotary-digit rotary-digit-3"></ul>
+                                    <ul class="rotary-digit rotary-digit-2"></ul>
+                                    <ul class="rotary-digit rotary-digit-1"></ul>
+                                    <ul class="rotary-digit rotary-digit-0"></ul>
+                                </div>
+                                <div class="game-score-rotary-mask"></div>
+                                <div class="game-score-rotary-text game-score-text">Очков</div>
                             </div>
                             <div class="game-social-share">
                                 <div class="social-vk social-vk-level-game">
